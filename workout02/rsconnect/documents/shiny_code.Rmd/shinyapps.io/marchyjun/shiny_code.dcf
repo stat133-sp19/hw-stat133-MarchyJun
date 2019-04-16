@@ -1,0 +1,10 @@
+name: shiny_code
+title:
+username:
+account: marchyjun
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 844126
+bundleId: 1991985
+url: https://marchyjun.shinyapps.io/shiny_code/
+when: 1554601986.83421
