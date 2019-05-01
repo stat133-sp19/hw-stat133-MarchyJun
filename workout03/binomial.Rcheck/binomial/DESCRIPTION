@@ -1,0 +1,14 @@
+Package: binomial
+Type: Package
+Title: Get Several Statistics Related to Binomial Distribution
+Version: 0.1.0
+Author: Youngjun Woo
+Maintainer: Youngjun Woo <yjwoo@berkeley.edu>
+Description: Functions to calculate probability of binomial distribution, binomial distribution, cumulative binomial distribution and to get several related statistics like mean, variance, skewness.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2019-05-01 06:26:53 UTC; youngjun
+Built: R 3.5.2; ; 2019-05-01 06:26:58 UTC; unix

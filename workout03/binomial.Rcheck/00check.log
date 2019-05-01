@@ -1,0 +1,151 @@
+* using log directory ‘/Users/youngjun/Dropbox/19_1/stat133/hw-stat133/workout03/binomial.Rcheck’
+* using R version 3.5.2 (2018-12-20)
+* using platform: x86_64-apple-darwin15.6.0 (64-bit)
+* using session charset: UTF-8
+* using options ‘--no-manual --as-cran’
+* checking for file ‘binomial/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘binomial’ version ‘0.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking serialization versions ... OK
+* checking whether package ‘binomial’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... WARNING
+print:
+  function(x, ...)
+print.binvar:
+  function(x)
+
+print:
+  function(x, ...)
+print.summary.binvar:
+  function(x)
+
+summary:
+  function(object, ...)
+summary.binvar:
+  function(x)
+
+plot:
+  function(x, ...)
+plot.bincum:
+  function(x)
+
+plot:
+  function(x, ...)
+plot.bindis:
+  function(x)
+
+See section ‘Generic functions and methods’ in the ‘Writing R
+Extensions’ manual.
+
+Found the following apparent S3 methods exported but not registered:
+  plot.bincum plot.bindis print.binvar print.summary.binvar
+  summary.binvar
+See section ‘Registering S3 methods’ in the ‘Writing R Extensions’
+manual.
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+plot.bincum: no visible global function definition for ‘ggplot’
+plot.bincum: no visible global function definition for ‘aes’
+plot.bincum: no visible binding for global variable ‘success’
+plot.bincum: no visible binding for global variable ‘cumulative’
+plot.bincum: no visible global function definition for ‘geom_line’
+plot.bincum: no visible global function definition for ‘geom_point’
+plot.bincum: no visible global function definition for
+  ‘scale_x_continuous’
+plot.bincum: no visible global function definition for
+  ‘scale_y_continuous’
+plot.bincum: no visible global function definition for ‘labs’
+plot.bindis: no visible global function definition for ‘ggplot’
+plot.bindis: no visible global function definition for ‘aes’
+plot.bindis: no visible binding for global variable ‘success’
+plot.bindis: no visible binding for global variable ‘probability’
+plot.bindis: no visible global function definition for ‘geom_bar’
+plot.bindis: no visible global function definition for
+  ‘scale_x_continuous’
+Undefined global functions or variables:
+  aes cumulative geom_bar geom_line geom_point ggplot labs probability
+  scale_x_continuous scale_y_continuous success
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  ‘aux_kurtosis’ ‘aux_mean’ ‘aux_mode’ ‘aux_skewness’ ‘aux_variance’
+  ‘bin_kurtosis’ ‘bin_mean’ ‘bin_mode’ ‘bin_skewness’ ‘bin_variance’
+  ‘check_prob’ ‘check_success’ ‘check_trials’ ‘plot.bincum’
+  ‘plot.bindis’ ‘print.binvar’ ‘print.summary.binvar’ ‘summary.binvar’
+All user-level objects in a package should have documentation entries.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking for code/documentation mismatches ... WARNING
+Functions or methods with usage in documentation object 'hello' but not in code:
+  hello
+
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'bin_cumulative'
+  ‘trials’ ‘prob’
+
+Undocumented arguments in documentation object 'bin_distribution'
+  ‘trials’ ‘prob’
+
+Undocumented arguments in documentation object 'bin_variable'
+  ‘trials’ ‘prob’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... WARNING
+Warning: parse error in file 'binomial-Ex.R':
+1: unexpected ':'
+19: 
+20: :
+    ^
+* checking files in ‘vignettes’ ... WARNING
+Files in the 'vignettes' directory but no files in 'inst/doc':
+  ‘introduction.Rmd’
+Package has no Sweave vignette sources and no VignetteBuilder field.
+* checking examples ... ERROR
+Running examples in ‘binomial-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: bin_choose
+> ### Title: : bin_choose()
+> ### Aliases: bin_choose
+> 
+> ### ** Examples
+> 
+> : bin_choose(n = 5, k = 2) : 10
+Error: unexpected ':' in ":"
+Execution halted
+* DONE
+Status: 1 ERROR, 6 WARNINGs, 1 NOTE

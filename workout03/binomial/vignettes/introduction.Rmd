@@ -1,0 +1,79 @@
+---
+title: "Getting Started with Binomial"
+author: "Youngjun Woo"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(binomial)
+```
+
+## Binomial
+
+The package `"Binomial"` is implements functions for calculating probabilities of a Binomial random variable, and related calculations such as the probability distribution, the expected value, variance, etc.
+
+## bin_choose(n, k)
+
+In order to calculate the probability of binomial distribution of given trials, probability, and success, we have to calculate the number of combinations in which k success can occur in n trials.
+```{r}
+bin_choose(n = 5, k = 2)
+bin_choose(5, 0)
+bin_choose(5, 1:3)
+```
+
+## bin_probability(success, trials, prob)
+
+We can get calculated probability from binomial distribution when we are given success, trials, and prob.
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5)
+
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+
+bin_probability(success = 55, trials = 100, prob = 0.45)
+```
+
+## bin_distribution(trials, prob)
+
+We can get data frame with the binomial probability distribution: success in the first column, probability in the second column.
+```{r}
+bin_distribution(trials = 5, prob = 0.5)
+```
+
+The `plot()` function gives us a barplot to display the probability histogram of a binomial distribution.
+```{r}
+dis1 <- bin_distribution(trials = 5, prob = 0.5)
+plot(dis1)
+```
+
+## bin_cumulative()
+
+We can get data frame with both the probability distribution and the cummulative probabilities: successes in the fist column, probability in the second column, and cumulative in the third column.
+```{r}
+bin_cumulative(trials = 5, prob = 0.5)
+```
+
+The `plot()` function gives us a graph to display the cumulative distribution.
+```{r}
+dis2 <- bin_cumulative(trials = 5, prob = 0.5)
+plot(dis2)
+```
+
+## bin_variable()
+
+This function check numbers of input trials and probability and shows input trials and prob.
+```{r}
+bin_variable(trials = 10, p = 0.3)
+```
+
+The `summary()` function gives us a nice table of related statistics of binomial distribution.
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3)
+binsum1 <- summary(bin1)
+binsum1
+```
+
