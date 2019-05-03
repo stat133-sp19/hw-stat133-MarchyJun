@@ -1,6 +1,10 @@
 bin_choose	bin_choose
 bin_cumulative	bin_cumulative
 bin_distribution	bin_distribution
+bin_kurtosis	bin_kurtosis
+bin_mean	bin_mean
+bin_mode	bin_mode
 bin_probability	bin_probability
+bin_skewness	bin_skewness
 bin_variable	bin_variable
-hello	hello
+bin_variance	bin_variance

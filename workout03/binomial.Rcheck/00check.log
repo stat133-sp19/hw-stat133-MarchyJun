@@ -97,25 +97,62 @@ Undefined global functions or variables:
 * checking for missing documentation entries ... WARNING
 Undocumented code objects:
   ‘aux_kurtosis’ ‘aux_mean’ ‘aux_mode’ ‘aux_skewness’ ‘aux_variance’
-  ‘bin_kurtosis’ ‘bin_mean’ ‘bin_mode’ ‘bin_skewness’ ‘bin_variance’
   ‘check_prob’ ‘check_success’ ‘check_trials’ ‘plot.bincum’
   ‘plot.bindis’ ‘print.binvar’ ‘print.summary.binvar’ ‘summary.binvar’
 All user-level objects in a package should have documentation entries.
 See chapter ‘Writing R documentation files’ in the ‘Writing R
 Extensions’ manual.
-* checking for code/documentation mismatches ... WARNING
-Functions or methods with usage in documentation object 'hello' but not in code:
-  hello
-
+* checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'bin_choose'
+  ‘n’ ‘k’
+Documented arguments not in \usage in documentation object 'bin_choose':
+  ‘n:’ ‘k:’
+
 Undocumented arguments in documentation object 'bin_cumulative'
   ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_cumulative':
+  ‘trials:’ ‘prob:’
 
 Undocumented arguments in documentation object 'bin_distribution'
   ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_distribution':
+  ‘trials:’ ‘prob:’
+
+Undocumented arguments in documentation object 'bin_kurtosis'
+  ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_kurtosis':
+  ‘trials:’ ‘prob:’
+
+Undocumented arguments in documentation object 'bin_mean'
+  ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_mean':
+  ‘trials:’ ‘prob:’
+
+Undocumented arguments in documentation object 'bin_mode'
+  ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_mode':
+  ‘trials:’ ‘prob:’
+
+Undocumented arguments in documentation object 'bin_probability'
+  ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_probability':
+  ‘trials:’ ‘prob:’
+
+Undocumented arguments in documentation object 'bin_skewness'
+  ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_skewness':
+  ‘trials:’ ‘prob:’
 
 Undocumented arguments in documentation object 'bin_variable'
   ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_variable':
+  ‘trials:’ ‘prob:’
+
+Undocumented arguments in documentation object 'bin_variance'
+  ‘trials’ ‘prob’
+Documented arguments not in \usage in documentation object 'bin_variance':
+  ‘trials:’ ‘prob:’
 
 Functions with \usage entries need to have the appropriate \alias
 entries, and all their arguments documented.
@@ -123,29 +160,11 @@ The \usage entries must correspond to syntactically valid R code.
 See chapter ‘Writing R documentation files’ in the ‘Writing R
 Extensions’ manual.
 * checking Rd contents ... OK
-* checking for unstated dependencies in examples ... WARNING
-Warning: parse error in file 'binomial-Ex.R':
-1: unexpected ':'
-19: 
-20: :
-    ^
+* checking for unstated dependencies in examples ... OK
 * checking files in ‘vignettes’ ... WARNING
 Files in the 'vignettes' directory but no files in 'inst/doc':
   ‘introduction.Rmd’
 Package has no Sweave vignette sources and no VignetteBuilder field.
-* checking examples ... ERROR
-Running examples in ‘binomial-Ex.R’ failed
-The error most likely occurred in:
-
-> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
-> ### Name: bin_choose
-> ### Title: : bin_choose()
-> ### Aliases: bin_choose
-> 
-> ### ** Examples
-> 
-> : bin_choose(n = 5, k = 2) : 10
-Error: unexpected ':' in ":"
-Execution halted
+* checking examples ... NONE
 * DONE
-Status: 1 ERROR, 6 WARNINGs, 1 NOTE
+Status: 4 WARNINGs, 1 NOTE
